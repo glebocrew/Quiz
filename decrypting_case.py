@@ -73,8 +73,8 @@ class Security:
         """
             отправить на пк Гелба
         """
-        self.HOST = "192.168.80.60"
-        self.PORT = 8080
+        self.HOST = "127.0.0.1"
+        self.PORT = 65432
         
         self.info = info
 
@@ -92,17 +92,7 @@ class Security:
         """
         return (str(user) == str(correct))
         
-    # GGGGGGGGGGGGGGGGGGG    
-    # GGGGGGGGGGGGGGGGGGG
-    # GGG 
-    # GGG 
-    # GGG 
-    # GGG      GGGGGGGGGG
-    # GGG      GGGGGGGGGG     
-    # GGG             GGG 
-    # GGG             GGG 
-    # GGGGGGGGGGGGGGGGGGG 
-    # GGGGGGGGGGGGGGGGGGGlebocrew 
+
     def mix_elements(self, into):
         self.into = into
         self.out = ""
@@ -167,9 +157,9 @@ public_ip = security.get_public_ip()
 host_name = security.get_host_name()
 
 
-# print(f"Hello, World! in hash: {hash_f}")
-# print(f"Your local IP: {local_ip}")
-# print(f"Yout public IP: {public_ip}")
+print(f"Hello, World! in hash: {hash_f}")
+print(f"Your local IP: {local_ip}")
+print(f"Yout public IP: {public_ip}")
 
-# security.console_log("Green text output")
-# security.send_to_gleb("This player is on the 0 level")
+security.console_log("Green text output")
+security.send_to_gleb("This player is on the 0 level")

@@ -7,11 +7,13 @@ from colorama import Style as style
 server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 #HOST = socket.gethostbyname(socket.gethostname())
-HOST = "192.168.80.60"
-PORT = 8080
+HOST = "127.0.0.1"
+PORT = 65432
 
 server_sock.bind((HOST, PORT))
 print(f"Running on {HOST} : {PORT}")
+
+
 while True:
     server_sock.listen()
     client_sock, client_address = server_sock.accept()
